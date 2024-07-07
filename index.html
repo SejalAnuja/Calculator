@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="input" readonly>
+            <div class="row">
+                <div class="col" id="clear">C</div>
+                <div onclick="Delete()" class="col DEL" id="Del">DEL</div>
+                <div onclick="apendToDisplay('%')" class="col modulo">%</div>
+                <div onclick="apendToDisplay('/')" class="col divide">/</div>
+            </div>
+            <div class="row">
+                <div onclick="apendToDisplay('7')" class="col" class="number">7</div>
+                <div onclick="apendToDisplay('8')" class="col" class="number">8</div>
+                <div onclick="apendToDisplay('9')" class="col" class="number">9</div>
+                <div onclick="apendToDisplay('*')" class="col mutiply">*</div>
+            </div>
+            <div class="row">
+                <div onclick="apendToDisplay('4')" class="col" class="number">4</div>
+                <div onclick="apendToDisplay('5')" class="col" class="number">5</div>
+                <div onclick="apendToDisplay('6')" class="col" class="number">6</div>
+                <div onclick="apendToDisplay('-')" class="col minus">-</div>
+            </div>
+            <div class="row">
+                <div onclick="apendToDisplay('1')" class="col" class="number">1</div>
+                <div onclick="apendToDisplay('2')" class="col" class="number">2</div>
+                <div onclick="apendToDisplay('3')" class="col" class="number">3</div>
+                <div onclick="apendToDisplay('+')" class="col plus">+</div>
+            </div>
+            <div class="row">
+                <div onclick="apendToDisplay('.')" class="col dot">.</div>
+                <div onclick="apendToDisplay('0')" class="col zero">0</div>
+                <div class="col equal" id="equal">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
